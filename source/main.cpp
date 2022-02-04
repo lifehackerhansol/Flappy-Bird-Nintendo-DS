@@ -97,7 +97,7 @@ int main(int argc, char **argv)
 	srand(time(NULL));
 
 	//Set NightFox game assets folder
-	NF_SetRootFolder("NITROFS");
+	NF_SetRootFolder("NITROFS", "/flappy_bird_ds.nds");
 
 	//Init 2D engine
 	NF_Set2D(GameScreen, 0);

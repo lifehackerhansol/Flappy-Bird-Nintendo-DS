@@ -22,9 +22,9 @@ include $(DEVKITARM)/base_rules
 
 LIBNDS	:=	$(DEVKITPRO)/libnds
 
-GAME_TITLE	    :=	Flappy bird
-GAME_SUBTITLE1	:=	Fewnity
-#GAME_SUBTITLE2	:=	Text 3
+GAME_TITLE	    :=	Flappy Bird
+GAME_SUBTITLE1	:=	Fewnity / lifehackerhansol
+#GAME_SUBTITLE2	:=	lifehackerhansol
 GAME_ICON		:=	$(CURDIR)/../icon.bmp
 AUDIO    	:=  	audio
 
@@ -65,7 +65,7 @@ _ADDFILES	:=	-d $(NITRO_FILES)
 # DATA is a list of directories containing binary files embedded using bin2o
 # NITRODATA is the directory where files for NitroFS will be placed
 #---------------------------------------------------------------------------------
-TARGET		:=	$(shell basename $(CURDIR))
+TARGET		:=	Flappy_Bird_DS
 BUILD		:=	build
 SOURCES		:=	source
 INCLUDES	:=	include
@@ -91,7 +91,7 @@ LDFLAGS	=	-specs=ds_arm9.specs -g $(ARCH) -Wl,-Map,$(notdir $*.map)
 #---------------------------------------------------------------------------------
 # any extra libraries we wish to link with the project
 #---------------------------------------------------------------------------------
-LIBS	:= -lmm9 -lnflib -lfat -lfilesystem -lnds9
+LIBS	:= -lmm9 -lnflib -lfat -lnds9
 
 
 #---------------------------------------------------------------------------------

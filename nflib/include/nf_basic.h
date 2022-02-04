@@ -54,7 +54,7 @@ void NF_Error(u16 code, const char* text, u32 value);
 
 
 // Funcion NF_SetRootFolder();
-void NF_SetRootFolder(const char* folder);
+void NF_SetRootFolder(const char* folder, const char* ROMpath);
 // Define el nombre de la carpeta que se usara como "root" si se usa la FAT
 
 

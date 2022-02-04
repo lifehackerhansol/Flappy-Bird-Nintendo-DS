@@ -1,0 +1,2 @@
+make -C nflib
+make
